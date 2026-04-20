@@ -1,0 +1,103 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using SP_ADO_CRUD.Models;
+
+namespace SP_ADO_CRUD.Controllers
+{
+    public class StudentsController : Controller
+    {
+
+        private readonly IConfiguration _config;
+
+        public StudentsController(IConfiguration config)
+        {
+            _config = config;
+        }
+
+
+        SqlConnection GetConnection()
+        {
+            return new SqlConnection(
+            _config.GetConnectionString("MyCon"));
+        }
+
+        public List<Qualification> GetQualifications()
+        {
+            List<Qualification> list = new List<Qualification>();
+
+            using (SqlConnection con = GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("sp_GetQualifications", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                con.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    list.Add(new Qualification
+                    {
+                        QualificationId = Convert.ToInt32(dr["QualificationId"]),
+                        QualificationName = dr["QualificationName"].ToString()
+                    });
+                }
+            }
+
+            return list;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Create()
+        {
+            ViewBag.Qualifications = GetQualifications();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Student student)
+        {
+            string fileName = "";
+
+            if (student.ImageFile != null)
+            {
+                fileName = Path.GetFileName(student.ImageFile.FileName);
+
+                string path = Path.Combine(
+                Directory.GetCurrentDirectory(),
+                "wwwroot/images",
+                fileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    student.ImageFile.CopyTo(stream);
+                }
+            }
+
+            using (SqlConnection con = GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("sp_InsertStudent", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@Name", student.Name);
+                cmd.Parameters.AddWithValue("@Gender", student.Gender);
+                cmd.Parameters.AddWithValue("@QualificationId", student.QualificationId);
+                cmd.Parameters.AddWithValue("@Technologies", student.Technologies);
+                cmd.Parameters.AddWithValue("@ImagePath", fileName);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
+    }
+}

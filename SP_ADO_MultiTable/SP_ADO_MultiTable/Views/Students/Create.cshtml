@@ -1,0 +1,192 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create Student</h2>
+
+<form asp-action="Create" method="post">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label asp-for="StudentName"></label>
+                <input asp-for="StudentName" class="form-control" />
+                <span asp-validation-for="StudentName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MobileNo"></label>
+                <input asp-for="MobileNo" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DOB"></label>
+                <input asp-for="DOB" type="date" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="State"></label>
+                <select asp-for="State" class="form-control">
+                    <option value="">-- Select State --</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr />
+
+    <h4>Qualifications</h4>
+
+    <table class="table table-bordered">
+
+        <thead>
+
+            <tr>
+                <th>Qualification</th>
+                <th>Passing Year</th>
+                <th>Percentage</th>
+                <th>University</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="qualificationBody">
+
+            <tr>
+
+                <td>
+                    <input name="Qualifications[0].QualificationName"
+                           class="form-control" />
+                </td>
+
+                <td>
+                    <input name="Qualifications[0].PassingYear"
+                           class="form-control" />
+                </td>
+
+                <td>
+                    <input name="Qualifications[0].Percentage"
+                           class="form-control" />
+                </td>
+
+                <td>
+                    <input name="Qualifications[0].University"
+                           class="form-control" />
+                </td>
+
+                <td>
+                    <button type="button"
+                            class="btn btn-danger removeRow">
+                        Remove
+                    </button>
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <button type="button"
+            class="btn btn-primary"
+            onclick="addRow()">
+
+        Add Qualification
+
+    </button>
+
+    <br /><br />
+
+    <button type="submit"
+            class="btn btn-success">
+
+        Save Student
+
+    </button>
+
+    <a type="button"
+            class="btn btn-secondary" asp-action="Index">
+        Back
+    </a>
+
+</form>
+
+<script>
+
+    let rowIndex = 1;
+
+    function addRow()
+    {
+        let table = document.getElementById("qualificationBody");
+
+        let row = `
+    <tr>
+
+    <td>
+    <input name="Qualifications[${rowIndex}].QualificationName"
+    class="form-control"/>
+    </td>
+
+    <td>
+    <input name="Qualifications[${rowIndex}].PassingYear"
+    class="form-control"/>
+    </td>
+
+    <td>
+    <input name="Qualifications[${rowIndex}].Percentage"
+    class="form-control"/>
+    </td>
+
+    <td>
+    <input name="Qualifications[${rowIndex}].University"
+    class="form-control"/>
+    </td>
+
+    <td>
+    <button type="button"
+    class="btn btn-danger removeRow">
+    Remove
+    </button>
+    </td>
+
+    </tr>
+    `;
+
+        table.insertAdjacentHTML("beforeend", row);
+
+        rowIndex++;
+    }
+
+    document.addEventListener("click", function(e)
+    {
+        if(e.target.classList.contains("removeRow"))
+        {
+            e.target.closest("tr").remove();
+        }
+    });
+
+</script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

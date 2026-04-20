@@ -1,0 +1,79 @@
+﻿@model List<Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Students List</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+
+<table class="table table-bordered">
+
+    <thead>
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>DOB</th>
+            <th>State</th>
+            <th>Qualifications</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var student in Model)
+        {
+            <tr>
+
+                <td>@student.StudentName</td>
+                <td>@student.Email</td>
+                <td>@student.MobileNo</td>
+                <td>@student.DOB.ToShortDateString()</td>
+                <td>@student.State</td>
+
+                <td>
+
+                    @if (student.Qualifications != null && student.Qualifications.Count > 0)
+                    {
+                        <ul>
+
+                            @foreach (var q in student.Qualifications)
+                            {
+                                <li>
+                                    @q.QualificationName -
+                                    @q.PassingYear -
+                                    @q.Percentage % -
+                                    @q.University
+                                </li>
+                            }
+
+                        </ul>
+                    }
+
+                </td>
+
+                <td>
+
+                    <a asp-action="Delete"
+                           asp-route-id="@student.StudentId"
+                           class="btn btn-danger">
+                        Delete
+                    </a>
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+

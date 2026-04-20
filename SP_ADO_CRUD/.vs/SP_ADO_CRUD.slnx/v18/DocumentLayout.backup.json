@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\models\\qualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\models\\qualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|d:\\mydesktop\\interview tasks\\sp_ado_crud\\sp_ado_crud\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F39AB2F7-354E-44D5-3CAB-2DF4121D2612}|SP_ADO_CRUD\\SP_ADO_CRUD.csproj|solutionrelative:sp_ado_crud\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 322,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Views\\Students\\Edit.cshtml",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Edit.cshtml",
+              "RelativeToolTip": "SP_ADO_CRUD\\Views\\Students\\Edit.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-11T06:37:16.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Program.cs",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Program.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Program.cs",
+              "RelativeToolTip": "SP_ADO_CRUD\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T05:52:07.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Create.cshtml",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Views\\Students\\Create.cshtml",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Create.cshtml",
+              "RelativeToolTip": "SP_ADO_CRUD\\Views\\Students\\Create.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-11T05:50:46.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Views\\Students\\Index.cshtml",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "SP_ADO_CRUD\\Views\\Students\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAE0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-11T05:48:44.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\appsettings.json",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\appsettings.json",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\appsettings.json",
+              "RelativeToolTip": "SP_ADO_CRUD\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-11T05:40:10.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "SP_ADO_CRUD\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAmwJEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T05:28:28.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Details.cshtml",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Views\\Students\\Details.cshtml",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Views\\Students\\Details.cshtml",
+              "RelativeToolTip": "SP_ADO_CRUD\\Views\\Students\\Details.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-11T06:58:13.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Qualification.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Models\\Qualification.cs",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Models\\Qualification.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Models\\Qualification.cs",
+              "RelativeToolTip": "SP_ADO_CRUD\\Models\\Qualification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T05:30:23.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "SP_ADO_CRUD\\Models\\Student.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\SP_ADO_CRUD\\SP_ADO_CRUD\\Models\\Student.cs",
+              "RelativeToolTip": "SP_ADO_CRUD\\Models\\Student.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T05:27:03.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

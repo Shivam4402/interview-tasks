@@ -1,0 +1,39 @@
+﻿@using EF_MultiTable.ViewModels
+@model List<StateListVM>
+
+@{
+    ViewData["Title"] = "State List";
+}
+
+<h2 class="mb-3">State List</h2>
+
+<a asp-action="Create" class="btn btn-success mb-3">Add New State</a>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>State Name</th>
+            <th>Cities</th>
+            <th width="150">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StateName</td>
+                <td>@item.Cities</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.StateId" class="btn btn-primary btn-sm">Edit</a>
+
+                    <a asp-action="Delete" asp-route-id="@item.StateId"
+                           class="btn btn-danger btn-sm"
+                           onclick="return confirm('Are you sure?')">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

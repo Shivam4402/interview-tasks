@@ -1,0 +1,77 @@
+﻿@using EF_MultiTable.ViewModels
+@model StateCityVM
+
+<h2>Create State</h2>
+
+<form asp-action="Create" method="post">
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+ <div class="mb-3">
+        <label>State Name</label>
+        <input type="text" asp-for="StateName" class="form-control" />
+        <span asp-validation-for="StateName" class="text-danger"></span>
+ </div>
+
+<table class="table" id="cityTable">
+    <thead>
+        <tr>
+            <th>City Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Cities.Count; i++)
+        {
+            <tr>
+                <td>
+                    <input type="hidden" asp-for="Cities[i].CityId" />
+                    <input type="text" asp-for="Cities[i].CityName" class="form-control" />
+                    <span asp-validation-for="Cities[i].CityName" class="text-danger"></span>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger removeRow">Remove</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button type="button" id="addRow" class="btn btn-success">Add City</button>
+<br /> <br />
+
+
+    <button type="submit"
+            class="btn btn-primary">
+        Save State
+    </button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+    </form>
+
+
+<script>
+    let index = @Model.Cities.Count;
+
+    document.getElementById("addRow").addEventListener("click", function () {
+        let row = `
+        <tr>
+            <td>
+                <input type="hidden" name="Cities[${index}].CityId" value="0" />
+                <input type="text" name="Cities[${index}].CityName" class="form-control" />
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger removeRow">Remove</button>
+            </td>
+        </tr>`;
+        
+        document.querySelector("#cityTable tbody").insertAdjacentHTML("beforeend", row);
+        index++;
+    });
+
+    document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("removeRow")) {
+            e.target.closest("tr").remove();
+        }
+    });
+</script>
+
