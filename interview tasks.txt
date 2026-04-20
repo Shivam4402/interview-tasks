@@ -1,0 +1,16 @@
+1. perform crud operation using ado.net
+
+2. perform crud operation using ado.net and stored procedure
+
+3. perform multi table insert using stored procedure with ado.net
+
+4. perform multi table insert using entity framework.
+
+5. perform single page crud operation with validation using javascript.
+
+6. perform crud operations using web api with entity framework.
+
+7. perform crud operation using web api  with ado .net
+
+8. image upload task with mvc as well as with web api
+
