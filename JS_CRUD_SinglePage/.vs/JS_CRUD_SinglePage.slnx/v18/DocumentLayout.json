@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Shivam\\JS_CRUD_SinglePage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\models\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:models\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\models\\jscrudsinglepagecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:models\\jscrudsinglepagecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|c:\\shivam\\js_crud_singlepage\\sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{FC2D1A18-0022-491C-A424-034562CD1CB2}|JS_CRUD_SinglePage.csproj|solutionrelative:sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "State.cs",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\Models\\State.cs",
+              "RelativeDocumentMoniker": "Models\\State.cs",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\Models\\State.cs",
+              "RelativeToolTip": "Models\\State.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T08:44:09.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAQwJIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-18T07:10:48.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T07:03:08.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T06:59:14.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T06:53:47.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-18T06:52:02.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\Sql_Queries\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "Sql_Queries\\SQLQuery1.sql",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\Sql_Queries\\SQLQuery1.sql",
+              "RelativeToolTip": "Sql_Queries\\SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-18T06:50:47.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JsCrudSinglePageContext.cs",
+              "DocumentMoniker": "C:\\Shivam\\JS_CRUD_SinglePage\\Models\\JsCrudSinglePageContext.cs",
+              "RelativeDocumentMoniker": "Models\\JsCrudSinglePageContext.cs",
+              "ToolTip": "C:\\Shivam\\JS_CRUD_SinglePage\\Models\\JsCrudSinglePageContext.cs",
+              "RelativeToolTip": "Models\\JsCrudSinglePageContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA9wBcAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T06:50:15.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

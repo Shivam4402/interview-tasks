@@ -1,0 +1,178 @@
+﻿
+
+<input type="hidden" id="studentId" />
+
+Name:
+<input type="text" id="name" />
+<br />
+
+Email:
+<input type="text" id="email" />
+<br />
+
+<!-- RADIO -->
+Gender:
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<br />
+
+<!-- DOB -->
+DOB:
+<input type="date" id="dob" />
+<br />
+
+<!-- CASCADING DROPDOWN -->
+State:
+<select id="state"></select>
+
+City:
+<select id="city"></select>
+<br />
+
+<!-- CHECKBOX -->
+Technologies:
+<input type="checkbox" value="C#">C#
+<input type="checkbox" value="Java">Java
+<input type="checkbox" value="JS">JS
+<br />
+
+<!-- IMAGE -->
+Profile:
+<input type="file" id="image" />
+<br />
+
+<button onclick="AddStudent()">Submit</button>
+
+<hr>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Technologies</th>
+            <th>State</th>
+            <th>City</th>
+            <th>DOB</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tbldata"></tbody>
+</table>
+
+@section scripts{
+    @* <script src="~/js/Student.js"></script> *@
+
+    <script>
+
+        const LoadStates = async () => {
+            const res = await fetch('/Student/GetStates');
+            const data = await res.json();
+
+            let opt = `<option value="${0}">Select</option>`;
+            data.forEach(s => {
+                opt += `<option value="${s.stateId}">${s.stateName}</option>`;
+            });
+
+            document.getElementById("state").innerHTML = opt;
+        };
+
+        LoadStates();
+
+        document.getElementById("state").addEventListener("change", async function () {
+
+            const stateId = this.value;
+
+            const res = await fetch('/Student/GetCities?stateId=' + stateId);
+            const data = await res.json();
+
+            let opt = `<option value="${0}">Select</option>`;
+            data.forEach(c => {
+                opt += `<option value="${c.cityId}">${c.cityName}</option>`;
+            });
+
+            document.getElementById("city").innerHTML = opt;
+        });
+
+
+
+         function getTechnologies() {
+            let tech = [];
+            document.querySelectorAll("input[type=checkbox]:checked").forEach(x => {
+                tech.push(x.value);
+            });
+            return tech.join(",");
+        }
+
+
+        const AddStudent = async () => {
+
+            let formData = new FormData();
+
+            formData.append("Name", document.getElementById("name").value);
+            formData.append("Email", document.getElementById("email").value);
+            formData.append("Dob", document.getElementById("dob").value);
+            formData.append("StateId", document.getElementById("state").value);
+            formData.append("CityId", document.getElementById("city").value);
+            formData.append("Technologies", getTechnologies());
+                
+            // Radio
+            let gender = document.querySelector('input[name="gender"]:checked')?.value;
+            formData.append("Gender", gender);
+
+            // Image
+            let file = document.getElementById("image").files[0];
+            formData.append("ProfileImage", file);
+
+            await fetch('/Student/AddStudent', {
+                method: "POST",
+                body: formData
+            });
+
+            alert("Saved");
+            FetchStudents();
+        };
+
+
+
+        const FetchStudents = async () => {
+
+            const res = await fetch('/Student/GetAllStudents');
+            const data = await res.json();
+
+            let row = "";
+
+            data.forEach(s => {
+                row += `<tr>
+                    <td>${s.name}</td>
+                    <td>${s.gender}</td>
+                    <td>${s.technologies}</td>
+                    <td>${s.stateId}</td>
+                    <td>${s.cityId}</td>
+                    <td>${s.dob?.split('T')[0]}</td>
+                    <td><img src="/images/${s.profileImage}" width="50"/></td>
+                    <td>
+                        <button onclick="DeleteStudent(${s.id})">Delete</button>
+                    </td>
+                </tr>`;
+            });
+
+            document.getElementById("tbldata").innerHTML = row;
+        };
+
+        FetchStudents();
+
+
+        const DeleteStudent = async (id) => {
+
+            await fetch('/Student/DeleteStudent?id=' + id, {
+                method: "POST"
+            });
+
+            FetchStudents();
+        };
+
+
+    </script>
+}
