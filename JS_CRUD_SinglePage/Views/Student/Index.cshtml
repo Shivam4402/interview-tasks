@@ -42,6 +42,8 @@ Profile:
 <br />
 
 <button onclick="AddStudent()">Submit</button>
+<button id="btnupdate" onclick="UpdateStudent()">Update</button>
+<img id="imgPreview" width="80" />
 
 <hr>
 
@@ -96,8 +98,7 @@ Profile:
         });
 
 
-
-         function getTechnologies() {
+        function getTechnologies() {
             let tech = [];
             document.querySelectorAll("input[type=checkbox]:checked").forEach(x => {
                 tech.push(x.value);
@@ -106,7 +107,87 @@ Profile:
         }
 
 
+        function validateForm() {
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let dob = document.getElementById("dob").value;
+
+            let gender = document.querySelector('input[name="gender"]:checked');
+
+            let state = document.getElementById("state").value;
+            let city = document.getElementById("city").value;
+
+            let tech = document.querySelectorAll("input[type=checkbox]:checked");
+
+            let file = document.getElementById("image").files[0];
+
+            if (file) {
+                if (!file.type.startsWith("image/")) {
+                    alert("Only image allowed");
+                    return false;
+                }
+
+                if (file.size > 2 * 1024 * 1024) {
+                    alert("Max 2MB allowed");
+                    return false;
+                }
+            }
+
+            // NAME
+            if (name === "") {
+                alert("Name is required");
+                return false;
+            }
+
+            // EMAIL
+            if (email === "") {
+                alert("Email is required");
+                return false;
+            }
+
+            if (!email.includes("@@")) {
+                alert("Invalid email");
+                return false;
+            }
+
+            // GENDER
+            if (!gender) {
+                alert("Select gender");
+                return false;
+            }
+
+            // DOB
+            if (!dob) {
+                alert("Select DOB");
+                return false;
+            }
+
+            // STATE
+            if (state == "" || state == "Select") {
+                alert("Select State");
+                return false;
+            }
+
+            // CITY
+            if (!city) {
+                alert("Select City");
+                return false;
+            }
+
+            // TECHNOLOGY
+            if (tech.length === 0) {
+                alert("Select at least one technology");
+                return false;
+            }
+
+            return true;
+}
+
+
         const AddStudent = async () => {
+
+            if (!validateForm()) return;
 
             let formData = new FormData();
 
@@ -135,7 +216,6 @@ Profile:
         };
 
 
-
         const FetchStudents = async () => {
 
             const res = await fetch('/Student/GetAllStudents');
@@ -148,12 +228,14 @@ Profile:
                     <td>${s.name}</td>
                     <td>${s.gender}</td>
                     <td>${s.technologies}</td>
-                    <td>${s.stateId}</td>
-                    <td>${s.cityId}</td>
+                    <td>${s.stateName}</td>
+                    <td>${s.cityName}</td>
                     <td>${s.dob?.split('T')[0]}</td>
                     <td><img src="/images/${s.profileImage}" width="50"/></td>
                     <td>
+                        <button onclick="EditStudent(${s.id})">Edit</button>
                         <button onclick="DeleteStudent(${s.id})">Delete</button>
+
                     </td>
                 </tr>`;
             });
@@ -161,7 +243,118 @@ Profile:
             document.getElementById("tbldata").innerHTML = row;
         };
 
+
         FetchStudents();
+
+
+        const EditStudent = async (id) => {
+
+            const res = await fetch('/Student/GetStudentById?id=' + id);
+            const st = await res.json();
+
+            // SET BASIC FIELDS
+            document.getElementById("studentId").value = st.id;
+            document.getElementById("name").value = st.name;
+            document.getElementById("email").value = st.email;
+            document.getElementById("dob").value = st.dob?.split('T')[0];
+
+            // ✅ RADIO AUTO SELECT
+            document.querySelectorAll('input[name="gender"]').forEach(r => {
+                r.checked = (r.value === st.gender);
+            });
+
+            // ✅ STATE DROPDOWN
+            document.getElementById("state").value = st.stateId;
+
+            // LOAD CITIES FIRST (IMPORTANT)
+            await LoadCitiesForEdit(st.stateId, st.cityId);
+
+            // ✅ CHECKBOX AUTO SELECT
+            let techArray = st.technologies?.split(',') || [];
+
+            document.querySelectorAll("input[type=checkbox]").forEach(c => {
+                c.checked = techArray.includes(c.value);
+            });
+
+            // OPTIONAL: SHOW IMAGE PREVIEW
+            if (st.profileImage) {
+                document.getElementById("imgPreview").src = "/images/" + st.profileImage;
+            }
+
+            // SWITCH BUTTON
+            document.getElementById("btnsubmit").style.display = "none";
+            document.getElementById("btnupdate").style.display = "inline-block";
+        };
+
+        const LoadCitiesForEdit = async (stateId, selectedCityId) => {
+
+            const res = await fetch('/Student/GetCities?stateId=' + stateId);
+            const data = await res.json();
+
+            let opt = "";
+            data.forEach(c => {
+                opt += `<option value="${c.cityId}" ${c.cityId == selectedCityId ? "selected" : ""}>
+                            ${c.cityName}
+                        </option>`;
+            });
+
+            document.getElementById("city").innerHTML = opt;
+        };
+
+        const UpdateStudent = async () => {
+
+            let formData = new FormData();
+
+            formData.append("Id", document.getElementById("studentId").value);
+            formData.append("Name", document.getElementById("name").value);
+            formData.append("Email", document.getElementById("email").value);
+            formData.append("DOB", document.getElementById("dob").value);
+            formData.append("StateId", document.getElementById("state").value);
+            formData.append("CityId", document.getElementById("city").value);
+
+            // RADIO
+            let gender = document.querySelector('input[name="gender"]:checked')?.value;
+            formData.append("Gender", gender);
+
+            // CHECKBOX
+            formData.append("Technologies", getTechnologies());
+
+            // IMAGE (optional)
+            let file = document.getElementById("image").files[0];
+            if (file) {
+                formData.append("ProfileImage", file);
+            }
+
+            await fetch('/Student/UpdateStudent', {
+                method: "POST",
+                body: formData
+            });
+
+            alert("Updated Successfully");
+
+            ClearForm();
+            FetchStudents();
+        };
+
+        const ClearForm = () => {
+
+            document.getElementById("studentId").value = "";
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("dob").value = "";
+
+            document.querySelectorAll('input[name="gender"]').forEach(r => r.checked = false);
+
+            document.querySelectorAll("input[type=checkbox]").forEach(c => c.checked = false);
+
+            document.getElementById("state").value = "";
+            document.getElementById("city").innerHTML = "";
+
+            document.getElementById("image").value = "";
+
+            document.getElementById("btnsubmit").style.display = "inline-block";
+            document.getElementById("btnupdate").style.display = "none";
+        };
 
 
         const DeleteStudent = async (id) => {

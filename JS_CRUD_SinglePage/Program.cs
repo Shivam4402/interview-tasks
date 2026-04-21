@@ -1,4 +1,6 @@
 using JS_CRUD_SinglePage.Models;
+using JS_CRUD_SinglePage.Services.Implementations;
+using JS_CRUD_SinglePage.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -12,6 +14,8 @@ builder.Services.AddDbContext<JsCrudSinglePageContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection")
     )
  );
+
+builder.Services.AddScoped<IStudentService, StudentService>();
 
 var app = builder.Build();
 

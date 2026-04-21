@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Shivam\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj": {}
+    "C:\\Shivam\\interview-tasks\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj": {}
   },
   "projects": {
-    "C:\\Shivam\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj": {
+    "C:\\Shivam\\interview-tasks\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Shivam\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj",
+        "projectUniqueName": "C:\\Shivam\\interview-tasks\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj",
         "projectName": "JS_CRUD_SinglePage",
-        "projectPath": "C:\\Shivam\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj",
+        "projectPath": "C:\\Shivam\\interview-tasks\\JS_CRUD_SinglePage\\JS_CRUD_SinglePage.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Shivam\\JS_CRUD_SinglePage\\obj\\",
+        "outputPath": "C:\\Shivam\\interview-tasks\\JS_CRUD_SinglePage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
