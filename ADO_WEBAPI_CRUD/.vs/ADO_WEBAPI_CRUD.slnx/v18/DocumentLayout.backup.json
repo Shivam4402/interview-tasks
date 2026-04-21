@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\helpers\\imagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:helpers\\imagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|c:\\shivam\\interview-tasks\\ado_webapi_crud\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F70AC6B-7766-4679-97AC-EE286813937A}|ADO_WEBAPI_CRUD.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:17:13.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImageHelper.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Helpers\\ImageHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\ImageHelper.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Helpers\\ImageHelper.cs",
+              "RelativeToolTip": "Helpers\\ImageHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:16:38.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:10:58.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T10:10:15.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:10:13.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\DTOs\\StudentDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\StudentDto.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\DTOs\\StudentDto.cs",
+              "RelativeToolTip": "DTOs\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:10:05.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Services\\Implementations\\StudentService.cs*",
+              "RelativeToolTip": "Services\\Implementations\\StudentService.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:09:53.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\ADO_WEBAPI_CRUD\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:09:41.343Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

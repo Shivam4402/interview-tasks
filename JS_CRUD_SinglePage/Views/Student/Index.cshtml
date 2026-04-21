@@ -1,67 +1,143 @@
-﻿
+﻿<div class="container mt-4">
 
-<input type="hidden" id="studentId" />
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Student Form</h5>
+        </div>
 
-Name:
-<input type="text" id="name" />
-<br />
+        <div class="card-body">
 
-Email:
-<input type="text" id="email" />
-<br />
+            <input type="hidden" id="studentId" />
 
-<!-- RADIO -->
-Gender:
-<input type="radio" name="gender" value="Male"> Male
-<input type="radio" name="gender" value="Female"> Female
-<br />
+            <div class="row g-3">
 
-<!-- DOB -->
-DOB:
-<input type="date" id="dob" />
-<br />
+                <!-- Name -->
+                <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter name">
+                </div>
 
-<!-- CASCADING DROPDOWN -->
-State:
-<select id="state"></select>
+                <!-- Email -->
+                <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="text" id="email" class="form-control" placeholder="Enter email">
+                </div>
 
-City:
-<select id="city"></select>
-<br />
+                <!-- Gender -->
+                <div class="col-md-6">
+                    <label class="form-label d-block">Gender</label>
 
-<!-- CHECKBOX -->
-Technologies:
-<input type="checkbox" value="C#">C#
-<input type="checkbox" value="Java">Java
-<input type="checkbox" value="JS">JS
-<br />
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" value="Male">
+                        <label class="form-check-label">Male</label>
+                    </div>
 
-<!-- IMAGE -->
-Profile:
-<input type="file" id="image" />
-<br />
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" value="Female">
+                        <label class="form-check-label">Female</label>
+                    </div>
+                </div>
 
-<button onclick="AddStudent()">Submit</button>
-<button id="btnupdate" onclick="UpdateStudent()">Update</button>
-<img id="imgPreview" width="80" />
+                <!-- DOB -->
+                <div class="col-md-6">
+                    <label class="form-label">DOB</label>
+                    <input type="date" id="dob" class="form-control">
+                </div>
 
-<hr>
+                <!-- State -->
+                <div class="col-md-6">
+                    <label class="form-label">State</label>
+                    <select id="state" class="form-select"></select>
+                </div>
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Technologies</th>
-            <th>State</th>
-            <th>City</th>
-            <th>DOB</th>
-            <th>Image</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody id="tbldata"></tbody>
-</table>
+                <!-- City -->
+                <div class="col-md-6">
+                    <label class="form-label">City</label>
+                    <select id="city" class="form-select"></select>
+                </div>
+
+                <!-- Technologies -->
+                <div class="col-md-12">
+                    <label class="form-label d-block">Technologies</label>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="C#">
+                        <label class="form-check-label">C#</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="Java">
+                        <label class="form-check-label">Java</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="JS">
+                        <label class="form-check-label">JavaScript</label>
+                    </div>
+                </div>
+
+                <!-- Image Upload -->
+                <div class="col-md-6">
+                    <label class="form-label">Profile Image</label>
+                    <input type="file" id="image" class="form-control">
+                </div>
+
+                <!-- Preview -->
+                <div class="col-md-6 text-center" style="display:none;" id="imgdv">
+                    <label class="form-label d-block">Preview</label>
+                    <img id="imgPreview" class="img-thumbnail" width="100" />
+                </div>
+
+                <!-- Buttons -->
+                <div class="col-12 text-end mt-3">
+                    <button class="btn btn-success me-2" onclick="AddStudent()" id="btnsubmit">
+                        Submit
+                    </button>
+
+                    <button class="btn btn-warning" onclick="UpdateStudent()" id="btnupdate" style="display:none;">
+                        Update
+                    </button>
+                    
+                    <button class="btn btn-danger" onclick="ClearForm()">
+                        Clear
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="card shadow mt-4">
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">Student List</h5>
+        </div>
+
+        <div class="card-body table-responsive">
+
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Technologies</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>DOB</th>
+                        <th>Image</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbldata"></tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
 
 @section scripts{
     @* <script src="~/js/Student.js"></script> *@
@@ -80,7 +156,9 @@ Profile:
             document.getElementById("state").innerHTML = opt;
         };
 
+
         LoadStates();
+
 
         document.getElementById("state").addEventListener("change", async function () {
 
@@ -122,17 +200,7 @@ Profile:
 
             let file = document.getElementById("image").files[0];
 
-            if (file) {
-                if (!file.type.startsWith("image/")) {
-                    alert("Only image allowed");
-                    return false;
-                }
 
-                if (file.size > 2 * 1024 * 1024) {
-                    alert("Max 2MB allowed");
-                    return false;
-                }
-            }
 
             // NAME
             if (name === "") {
@@ -143,11 +211,6 @@ Profile:
             // EMAIL
             if (email === "") {
                 alert("Email is required");
-                return false;
-            }
-
-            if (!email.includes("@@")) {
-                alert("Invalid email");
                 return false;
             }
 
@@ -179,6 +242,21 @@ Profile:
             if (tech.length === 0) {
                 alert("Select at least one technology");
                 return false;
+            }
+
+            
+            if (file) {
+                const allowedTypes = /image\/(jpeg|jpg|png|webp)/;
+
+                if (!allowedTypes.test(file.type)) {
+                    alert("Only JPG, PNG, WEBP allowed");
+                    return false;
+                }
+
+                if (file.size > 2 * 1024 * 1024) {
+                    alert("Max 2MB allowed");
+                    return false;
+                }
             }
 
             return true;
@@ -284,7 +362,9 @@ Profile:
             // SWITCH BUTTON
             document.getElementById("btnsubmit").style.display = "none";
             document.getElementById("btnupdate").style.display = "inline-block";
+            document.getElementById("imgdv").style.display = "inline-block";
         };
+
 
         const LoadCitiesForEdit = async (stateId, selectedCityId) => {
 
@@ -300,6 +380,7 @@ Profile:
 
             document.getElementById("city").innerHTML = opt;
         };
+
 
         const UpdateStudent = async () => {
 
@@ -336,6 +417,7 @@ Profile:
             FetchStudents();
         };
 
+
         const ClearForm = () => {
 
             document.getElementById("studentId").value = "";
@@ -354,18 +436,24 @@ Profile:
 
             document.getElementById("btnsubmit").style.display = "inline-block";
             document.getElementById("btnupdate").style.display = "none";
+            document.getElementById("imgdv").style.display = "none";
+
         };
 
 
         const DeleteStudent = async (id) => {
 
+            const isConfirmed = confirm("Really want to delete?");
+
+            if (!isConfirmed) return; // ✅ stop if user cancels
+
             await fetch('/Student/DeleteStudent?id=' + id, {
                 method: "POST"
             });
 
+            alert("Deleted successfully"); // optional
             FetchStudents();
         };
-
 
     </script>
 }

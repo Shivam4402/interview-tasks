@@ -15,15 +15,42 @@ namespace JS_CRUD_SinglePage.Services.Implementations
             _env = env;
         }
 
-        public async Task<List<Student>> GetAllAsync()
+        public async Task<List<StudentViewDto>> GetAllAsync()
         {
-            return await _db.Students.ToListAsync();
+            var data = await (from s in _db.Students
+                              join st in _db.States on s.StateId equals st.StateId
+                              join c in _db.Cities on s.CityId equals c.CityId
+                              select new StudentViewDto
+                              {
+                                  Id = s.Id,
+                                  Name = s.Name,
+                                  Gender = s.Gender,
+                                  Dob = s.Dob,
+                                  Email = s.Email,
+                                  Technologies = s.Technologies,
+                                  ProfileImage = s.ProfileImage,
+                                  StateName = st.StateName,
+                                  CityName = c.CityName
+                              }).ToListAsync();
+
+            return data;
         }
 
         public async Task<Student> GetByIdAsync(int id)
         {
             return await _db.Students.FindAsync(id);
         }
+
+        public async Task<List<State>> GetStatesAsync()
+        {
+            return await _db.States.ToListAsync();
+        }
+
+        public async Task<List<City>> GetCitiesAsync(int stateId)
+        {
+            return await _db.Cities.Where(c => c.StateId == stateId).ToListAsync();
+        }
+
 
         public async Task<string> AddAsync(StudentDto dto)
         {
@@ -50,7 +77,7 @@ namespace JS_CRUD_SinglePage.Services.Implementations
             await _db.SaveChangesAsync();
 
             return "Added";
-        }
+        }   
 
         public async Task<string> UpdateAsync(StudentDto dto)
         {

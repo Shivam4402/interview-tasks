@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JS_CRUD_SinglePage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa48374c24514d6d1277465b9d01ac4e851871e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+522a4c8b54801120819f96f6140dd50b4cd60a71")]
 [assembly: System.Reflection.AssemblyProductAttribute("JS_CRUD_SinglePage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JS_CRUD_SinglePage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

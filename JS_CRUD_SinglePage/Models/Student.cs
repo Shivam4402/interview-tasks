@@ -55,3 +55,17 @@ public class StudentDto
     // ✅ IMPORTANT FOR FILE UPLOAD
     public IFormFile ProfileImage { get; set; }
 }
+
+public class StudentViewDto
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Gender { get; set; }
+    public DateTime Dob { get; set; }
+    public string Email { get; set; }
+    public string Technologies { get; set; }
+    public string ProfileImage { get; set; }
+
+    public string StateName { get; set; }
+    public string CityName { get; set; }
+}

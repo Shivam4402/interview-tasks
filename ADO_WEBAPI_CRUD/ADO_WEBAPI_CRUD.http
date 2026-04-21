@@ -1,0 +1,6 @@
+@ADO_WEBAPI_CRUD_HostAddress = http://localhost:5007
+
+GET {{ADO_WEBAPI_CRUD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
