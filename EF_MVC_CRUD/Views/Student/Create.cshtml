@@ -1,0 +1,115 @@
+﻿@model EF_MVC_CRUD.DTOs.StudentDto
+
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Create Student</h4>
+        </div>
+    <div class="card-body">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="row">
+
+                <!-- Name -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+
+                </div>
+
+                <!-- DOB -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Date of Birth</label>
+                    <input asp-for="Dob" type="date" class="form-control" />
+                    <span asp-validation-for="Dob" class="text-danger"></span>
+                </div>
+
+                <!-- Gender -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label d-block">Gender</label>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" value="Male">
+                        <label class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" value="Female">
+                        <label class="form-check-label">Female</label>
+                    </div>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+
+                <!-- State Dropdown -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">State</label>
+                    <select asp-for="StateId" class="form-select">
+                        <option value="">-- Select State --</option>
+                        @foreach (var item in ViewBag.States)
+                        {
+                            <option value="@item.StateId">@item.StateName</option>
+                        }
+                    </select>
+
+                    <span asp-validation-for="StateId" class="text-danger"></span>
+
+                    @* <select asp-for="StateId"
+                            asp-items="@(new SelectList(ViewBag.States, "StateId", "StateName"))"
+                            class="form-select">
+                        <option value="">-- Select State --</option>
+                    </select> *@
+
+
+                </div>
+
+                <!-- Technologies -->
+                <div class="col-md-12 mb-3">
+                    <label class="form-label d-block">Technologies</label>
+
+                    <div class="row">
+                        @foreach (var tech in ViewBag.Technologies)
+                        {
+                            <div class="col-md-1">
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           name="SelectedTechnologies"
+                                           value="@tech.TechnologyId" />
+                                    <label class="form-check-label">
+                                        @tech.TechnologyName
+                                    </label>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <span class="text-danger" asp-validation-for="SelectedTechnologies"></span>
+
+                </div>
+
+                <!-- Image Upload -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Profile Image</label>
+                    <input type="file" name="ImageFile" class="form-control" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-3">
+                <button type="submit" class="btn btn-success px-4">Save</button>
+                <a asp-action="Index" class="btn btn-secondary px-4">Cancel</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</div>

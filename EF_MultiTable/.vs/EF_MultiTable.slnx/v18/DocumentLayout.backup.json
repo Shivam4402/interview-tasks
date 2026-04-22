@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\viewmodels\\statecityvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\viewmodels\\statecityvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\sqlqueries\\ef_multitable.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\sqlqueries\\ef_multitable.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\views\\states\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\views\\states\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\services\\implementations\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\services\\implementations\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\controllers\\statescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +23,16 @@
       "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\viewmodels\\statelistvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\viewmodels\\statecityvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\viewmodels\\statecityvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\viewmodels\\cityvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\viewmodels\\cityvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\views\\states\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\views\\states\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\sqlqueries\\ef_multitable.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\sqlqueries\\ef_multitable.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\views\\states\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\views\\states\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\views\\states\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\services\\implementations\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|solutionrelative:ef_multitable\\services\\implementations\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{661D68B3-AF59-E561-5767-170D2324611D}|EF_MultiTable\\EF_MultiTable.csproj|c:\\shivam\\interview-tasks\\ef_multitable\\ef_multitable\\services\\interfaces\\istateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,19 +70,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EF_MultiTable.sql ",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
-              "RelativeDocumentMoniker": "EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
-              "RelativeToolTip": "EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-04-20T08:55:35.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StateListVM.cs",
               "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\ViewModels\\StateListVM.cs",
               "RelativeDocumentMoniker": "EF_MultiTable\\ViewModels\\StateListVM.cs",
@@ -90,44 +78,47 @@
               "RelativeToolTip": "EF_MultiTable\\ViewModels\\StateListVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T10:54:55.731Z"
+              "WhenOpened": "2026-03-20T10:54:55.731Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Views\\States\\Create.cshtml",
               "RelativeDocumentMoniker": "EF_MultiTable\\Views\\States\\Create.cshtml",
               "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Views\\States\\Create.cshtml",
               "RelativeToolTip": "EF_MultiTable\\Views\\States\\Create.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-20T10:19:49.537Z"
+              "WhenOpened": "2026-03-20T10:19:49.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StatesController.cs",
               "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Controllers\\StatesController.cs",
               "RelativeDocumentMoniker": "EF_MultiTable\\Controllers\\StatesController.cs",
               "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Controllers\\StatesController.cs",
               "RelativeToolTip": "EF_MultiTable\\Controllers\\StatesController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAQwD0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T10:15:37.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "StateService.cs",
               "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Services\\Implementations\\StateService.cs",
               "RelativeDocumentMoniker": "EF_MultiTable\\Services\\Implementations\\StateService.cs",
               "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Services\\Implementations\\StateService.cs",
               "RelativeToolTip": "EF_MultiTable\\Services\\Implementations\\StateService.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAzqusbTIfwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T09:55:40.278Z"
+              "WhenOpened": "2026-03-20T09:55:40.278Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -151,16 +142,17 @@
               "RelativeToolTip": "EF_MultiTable\\ViewModels\\CityVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T09:46:03.357Z"
+              "WhenOpened": "2026-03-20T09:46:03.357Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\appsettings.json",
               "RelativeDocumentMoniker": "EF_MultiTable\\appsettings.json",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\appsettings.json*",
-              "RelativeToolTip": "EF_MultiTable\\appsettings.json*",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\appsettings.json",
+              "RelativeToolTip": "EF_MultiTable\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-20T09:26:20.189Z",
@@ -168,7 +160,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StateCityVM.cs",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\ViewModels\\StateCityVM.cs",
+              "RelativeDocumentMoniker": "EF_MultiTable\\ViewModels\\StateCityVM.cs",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\ViewModels\\StateCityVM.cs",
+              "RelativeToolTip": "EF_MultiTable\\ViewModels\\StateCityVM.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T09:45:53.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "EF_MultiTable.sql ",
+              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
+              "RelativeDocumentMoniker": "EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
+              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
+              "RelativeToolTip": "EF_MultiTable\\SqlQueries\\EF_MultiTable.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-20T08:55:35.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Views\\States\\Index.cshtml",
               "RelativeDocumentMoniker": "EF_MultiTable\\Views\\States\\Index.cshtml",
@@ -180,19 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StateCityVM.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\ViewModels\\StateCityVM.cs",
-              "RelativeDocumentMoniker": "EF_MultiTable\\ViewModels\\StateCityVM.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\ViewModels\\StateCityVM.cs",
-              "RelativeToolTip": "EF_MultiTable\\ViewModels\\StateCityVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T09:45:53.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MultiTable\\EF_MultiTable\\Views\\States\\Edit.cshtml",
               "RelativeDocumentMoniker": "EF_MultiTable\\Views\\States\\Edit.cshtml",

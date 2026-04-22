@@ -1,0 +1,55 @@
+﻿@model List<Student>
+
+<h2 class="mb-3">Student List</h2>
+<a asp-action="Create" class="btn btn-success mb-3">Add New Student</a>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>State</th>
+            <th>Dob</th>
+            <th>Profile Image</th>
+            <th>Technologies</th>
+            <th width="150">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Gender</td>
+                <td>@item.State.StateName</td>
+                <td>@item.Dob</td>
+                <td>
+                    @{
+                        string ext = System.IO.Path.GetExtension(item.ImagePath)?.ToLower();
+                    }
+
+                    @if(ext==".jpg" || ext == ".png")
+                    {
+                        <img src="@item.ImagePath" width="100" class="img-thumbnail" />
+                    }
+                    else
+                    {
+                        <a href="@item.ImagePath" target="_blank">View File</a>
+                    }
+
+                </td>
+                <td>@item.Technologies</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.StudentId" class="btn btn-primary btn-sm">Edit</a>
+
+                    <a asp-action="Delete" asp-route-id="@item.StudentId"
+                       class="btn btn-danger btn-sm"
+                       onclick="return confirm('Are you sure?')">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

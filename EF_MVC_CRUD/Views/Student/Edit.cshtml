@@ -1,0 +1,151 @@
+﻿@model EF_MVC_CRUD.DTOs.StudentDto
+
+@{
+ViewData["Title"] = "Edit Student";
+var selectedTechs = ViewBag.SelectedTechnologies as List<string> ?? new List<string>();
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-warning text-dark">
+            <h4 class="mb-0">Edit Student</h4>
+        </div>
+
+
+    <div class="card-body">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <input type="hidden" asp-for="StudentId" />
+
+            <div class="row">
+
+                <!-- Name -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- DOB -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Date of Birth</label>
+                    <input asp-for="Dob" type="date" class="form-control" />
+                        <span asp-validation-for="Dob" class="text-danger"></span>
+                </div>
+
+                <!-- Gender -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label d-block">Gender</label>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" value="Male"
+                               @(Model.Gender == "Male" ? "checked" : "") />
+                        <label class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Gender" value="Female"
+                               @(Model.Gender == "Female" ? "checked" : "") />
+                        <label class="form-check-label">Female</label>
+                    </div>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+
+                <!-- State Dropdown -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">State</label>
+                        @* <select name="StateId" class="form-select">
+                            <option value="">-- Select State --</option>
+
+                            @foreach (var item in ViewBag.States)
+                            {
+                                if (item.StateId == Model.StateId)
+                                {
+                                    <option value="@item.StateId" selected>@item.StateName</option>
+                                }
+                                else
+                                {
+                                    <option value="@item.StateId">@item.StateName</option>
+                                }
+                            }
+                        </select> *@
+
+
+                        <select asp-for="StateId"
+                                asp-items="@(new SelectList(ViewBag.States, "StateId", "StateName"))"
+                                class="form-select">
+                            <option value="">-- Select State --</option>
+                        </select>
+                        <span asp-validation-for="StateId" class="text-danger"></span>
+                </div>
+
+                <!-- Technologies (Checkbox with auto-select) -->
+                <div class="col-md-12 mb-3 
+                    <label class="form-label d-block">Technologies</label>
+
+                    <div class="row">
+                        @foreach (var tech in ViewBag.Technologies)
+                        {
+                            var isChecked = selectedTechs.Contains(tech.TechnologyName);
+
+                            <div class="col-md-1">
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           name="SelectedTechnologies"
+                                           value="@tech.TechnologyId"
+                                           @(isChecked ? "checked" : "") />
+
+                                    <label class="form-check-label">
+                                        @tech.TechnologyName
+                                    </label>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                        <span class="text-danger" asp-validation-for="SelectedTechnologies"></span>
+                </div>
+
+                <!-- Image Upload + Preview -->
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Profile Image</label>
+                    <input type="file" name="ImageFile" class="form-control" onchange="previewImage(event)" />
+                </div>
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+
+
+                <div class="col-md-6 mb-3">
+                    <label class="form-label d-block">Preview</label>
+
+                    <img id="preview"
+                         src="@Url.Content(ViewBag.ExistingImage)"
+                         width="120"
+                         class="img-thumbnail" />
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary px-4">Update</button>
+                <a asp-action="Index" class="btn btn-secondary px-4">Cancel</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</div>
+
+<script>
+    function previewImage(event) {
+        const input = event.target;
+        const preview = document.getElementById('preview');
+
+        if (input.files && input.files[0]) {
+            preview.src = URL.createObjectURL(input.files[0]);
+        }
+    }
+</script>
