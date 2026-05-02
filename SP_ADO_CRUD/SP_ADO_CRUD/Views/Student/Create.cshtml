@@ -1,0 +1,121 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+
+<div class="container mt-4">
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Add Student</h4>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+                <div class="row">
+
+                    <!-- Name -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Name</label>
+                        <input asp-for="Name" class="form-control" placeholder="Enter name" />
+                    </div>
+
+                    <!-- Email (optional if you have) -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">DOB</label>
+                        <input asp-for="DOB" type="date" class="form-control" />
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label d-block">Gender</label>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Gender" value="Male" />
+                            <label class="form-check-label">Male</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Gender" value="Female" />
+                            <label class="form-check-label">Female</label>
+                        </div>
+                    </div>
+
+                    <!-- Qualification Dropdown -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Qualification</label>
+
+                        <select asp-for="QualificationId" class="form-select">
+                            <option value="">-- Select Qualification --</option>
+
+                            @foreach (var q in ViewBag.Qualifications)
+                            {
+                                <option value="@q.QualificationId">@q.QualificationName</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Technologies -->
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label d-block">Technologies</label>
+
+                        @foreach (var tech in ViewBag.Technologies)
+                        {
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       name="selectedTechnologies"
+                                       value="@tech.TechnologyId" />
+
+                                <label class="form-check-label">
+                                    @tech.TechnologyName
+                                </label>
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Image Upload -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Profile Image</label>
+                        <input type="file" name="file" class="form-control" />
+                    </div>
+
+                    <!-- Preview -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Preview</label><br />
+                        <img id="previewImg"
+                             src="#"
+                             class="rounded border"
+                             style="width:100px; height:100px; object-fit:cover; display:none;" />
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-end">
+                    <a href="/Student/Index" class="btn btn-secondary me-2">Cancel</a>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Image Preview Script -->
+<script>
+    document.querySelector("input[name='file']").addEventListener("change", function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            const img = document.getElementById("previewImg");
+            img.src = URL.createObjectURL(file);
+            img.style.display = "block";
+        }
+    });
+</script>
