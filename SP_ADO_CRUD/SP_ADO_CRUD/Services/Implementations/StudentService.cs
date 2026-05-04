@@ -18,7 +18,9 @@ namespace SP_ADO_CRUD.Services.Implementations
 
         public List<Student> GetAll()
         {
-            List<Student> list = new();
+            var students = new List<Student>();
+            var qualifications = GetQualifications();   
+            var technologies = GetTechnologies();       
 
             using SqlConnection con = new(_con);
             using SqlCommand cmd = new("sp_GetStudents", con);
@@ -29,7 +31,7 @@ namespace SP_ADO_CRUD.Services.Implementations
 
             while (dr.Read())
             {
-                list.Add(new Student
+                var student = new Student
                 {
                     Id = (int)dr["Id"],
                     Name = dr["Name"].ToString(),
@@ -38,10 +40,23 @@ namespace SP_ADO_CRUD.Services.Implementations
                     Technologies = dr["Technologies"].ToString(),
                     ImagePath = dr["ImagePath"].ToString(),
                     DOB = Convert.ToDateTime(dr["DOB"])
-                });
+                };
+
+                student.QualificationName = qualifications
+                    .FirstOrDefault(q => q.QualificationId == student.QualificationId)
+                    ?.QualificationName;
+
+                var techIds = student.Technologies?.Split(',') ?? new string[] { };
+
+                student.TechnologyNames = string.Join(", ",
+                    technologies
+                    .Where(t => techIds.Contains(t.TechnologyId.ToString()))
+                    .Select(t => t.TechnologyName));
+
+                students.Add(student);
             }
 
-            return list;
+            return students;
         }
 
         public Student GetById(int id)

@@ -48,7 +48,7 @@
                                     <td>
                                         @if (!string.IsNullOrEmpty(item.ImagePath))
                                         {
-                                            <img src="@item.ImagePath"
+                                            <img src="~/images/@item.ImagePath"
                                                  class="rounded-circle"
                                                  style="width:50px; height:50px; object-fit:cover;" />
                                         }
@@ -62,22 +62,27 @@
                                     <td class="fw-semibold">@item.Name</td>
 
                                     <!-- Gender -->
-                                    <td>
-                                        <span class="badge bg-info text-dark">
-                                            @item.Gender
-                                        </span>
-                                    </td>
+                                    <td>@item.Gender</td>
 
                                     <!-- Qualification -->
-                                    <td>@item.QualificationId</td>
+                                    <td>@item.QualificationName</td>
 
                                     <!-- Technologies -->
-                                    <td>
+                                    @* <td>
                                         @foreach (var tech in item.Technologies?.Split(',') ?? new string[] { })
                                         {
                                             <span class="badge bg-secondary me-1">@tech</span>
                                         }
+                                    </td> *@
+                                    @* <td>@item.TechnologyNames</td> *@
+
+                                    <td>
+                                        @foreach (var tech in item.TechnologyNames.Split(','))
+                                        {
+                                            <span class="badge bg-primary me-1">@tech</span>
+                                        }
                                     </td>
+
 
                                     <!-- DOB -->
                                     <td>

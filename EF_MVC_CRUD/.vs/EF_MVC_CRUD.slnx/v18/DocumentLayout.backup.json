@@ -1,54 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\",
+  "WorkspaceRootPath": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\models\\efmvccrudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:models\\efmvccrudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\models\\efmvccrudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:models\\efmvccrudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|c:\\shivam\\interview-tasks\\ef_mvc_crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{37A294BF-06DA-4151-8FB9-86CC7D77D55D}|EF_MVC_CRUD.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|d:\\mydesktop\\interview tasks\\ef_mvc_crud\\sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{DDF90857-663B-A190-A156-D942F6396179}|EF_MVC_CRUD.csproj|solutionrelative:sql_queries\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,163 +66,166 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T05:36:49.589Z",
+              "DocumentIndex": 0,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Sql_Queries\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "Sql_Queries\\SQLQuery1.sql",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Sql_Queries\\SQLQuery1.sql",
+              "RelativeToolTip": "Sql_Queries\\SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-04T07:28:52.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Controllers\\StudentController.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-22T05:04:17.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "StudentDto.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\DTOs\\StudentDto.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\DTOs\\StudentDto.cs",
               "RelativeDocumentMoniker": "DTOs\\StudentDto.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\DTOs\\StudentDto.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\DTOs\\StudentDto.cs",
               "RelativeToolTip": "DTOs\\StudentDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBAAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T04:46:42.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T04:46:42.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Views\\Student\\Edit.cshtml",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Views\\Student\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\Edit.cshtml",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Views\\Student\\Edit.cshtml*",
-              "RelativeToolTip": "Views\\Student\\Edit.cshtml*",
-              "ViewState": "AgIAADIAAAAAAAAAAIAwwFQAAAAcAAAAAAAAAA==",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-04-22T06:18:03.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Views\\Student\\Create.cshtml",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Views\\Student\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\Create.cshtml",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Views\\Student\\Create.cshtml",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Views\\Student\\Create.cshtml",
               "RelativeToolTip": "Views\\Student\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-22T05:39:34.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T05:39:34.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Services\\Interfaces\\IStudentService.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Services\\Interfaces\\IStudentService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IStudentService.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Services\\Interfaces\\IStudentService.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Services\\Interfaces\\IStudentService.cs",
               "RelativeToolTip": "Services\\Interfaces\\IStudentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T04:48:43.478Z",
+              "WhenOpened": "2026-04-22T04:48:43.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-22T05:21:54.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\appsettings.json*",
+              "RelativeToolTip": "appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-22T04:33:33.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Views\\Student\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Views\\Student\\Index.cshtml",
-              "RelativeToolTip": "Views\\Student\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-22T05:21:54.133Z",
-              "EditorCaption": ""
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T05:36:49.589Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EfMvcCrudContext.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Models\\EfMvcCrudContext.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Models\\EfMvcCrudContext.cs",
               "RelativeDocumentMoniker": "Models\\EfMvcCrudContext.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Models\\EfMvcCrudContext.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Models\\EfMvcCrudContext.cs",
               "RelativeToolTip": "Models\\EfMvcCrudContext.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAqwBYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T04:37:05.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T06:54:29.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Services\\Implementations\\StudentService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\StudentService.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Services\\Implementations\\StudentService.cs",
-              "RelativeToolTip": "Services\\Implementations\\StudentService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAuwFEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T04:52:35.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T04:37:05.175Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T04:31:59.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T06:54:29.668Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Shivam\\interview-tasks\\EF_MVC_CRUD\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-22T04:33:33.463Z",
-              "EditorCaption": ""
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\StudentService.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "Services\\Implementations\\StudentService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAuwFEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T04:52:35.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\MyDesktop\\Interview Tasks\\EF_MVC_CRUD\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T04:31:59.697Z"
             }
           ]
         }

@@ -1,0 +1,140 @@
+﻿@using SP_ADO_CRUD.ViewModels
+@model StudentViewModel
+
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-warning text-dark">
+            <h4 class="mb-0">Edit Student</h4>
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="card-body">
+
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+
+                    <!-- Name -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Name</label>
+                        <input asp-for="Name" class="form-control" required />
+
+                        <span asp-validation-for="Name" class="text-danger"></span>
+
+                    </div>
+
+                    <!-- DOB -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">DOB</label>
+                        <input asp-for="DOB" type="date" class="form-control" required />
+
+                        <span asp-validation-for="DOB" class="text-danger"></span>
+
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label d-block">Gender</label>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Gender" value="Male"
+                                   @(Model.Gender == "Male" ? "checked" : "") required />
+                            <label class="form-check-label">Male</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Gender" value="Female"
+                            @(Model.Gender == "Female" ? "checked" : "") required />
+                            <label class="form-check-label">Female</label>
+                        </div>
+
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+
+                    </div>
+
+                    <!-- Qualification -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Qualification</label>
+                        
+                        <select asp-for="QualificationId"
+                                asp-items="@(new SelectList(Model.Qualifications, "QualificationId", "QualificationName"))"
+                                class="form-select" required>
+                            <option value="">-- Select State --</option>
+                        </select> 
+
+                        <span asp-validation-for="QualificationId" class="text-danger"></span>
+
+                    </div>
+
+                    <!-- Technologies -->
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label d-block">Technologies</label>
+
+                        @foreach (var tech in Model.Technologies)
+                        {
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       name="SelectedTechnologies"
+                                       value="@tech.TechnologyId"
+                                @(Model.SelectedTechnologies.Contains(tech.TechnologyId) ? "checked" : "") />
+
+                                <label class="form-check-label">@tech.TechnologyName</label>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Change Image</label>
+                        <input type="file" name="file" class="form-control" required/>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Current Image</label><br />
+
+                        @if (!string.IsNullOrEmpty(Model.ImagePath))
+                        {
+                            <img id="previewImg"
+                                 src="@Url.Content("~/images/" + Model.ImagePath)"
+                                 class="rounded border"
+                                 style="width:100px; height:100px; object-fit:cover;" />
+                        }
+                        else
+                        {
+                            <span class="text-muted">No Image</span>
+                        }
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-end">
+                    <a href="/Student/Index" class="btn btn-secondary me-2">Cancel</a>
+                    <button type="submit" class="btn btn-warning">Update</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Image Preview Script -->
+<script>
+    document.querySelector("input[name='file']").addEventListener("change", function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            const img = document.getElementById("previewImg");
+            img.src = URL.createObjectURL(file);
+        }
+    });
+</script>

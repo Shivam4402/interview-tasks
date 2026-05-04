@@ -9,5 +9,10 @@
         public string Technologies { get; set; }
         public string ImagePath { get; set; }
         public DateTime? DOB { get; set; }
+
+
+        public string QualificationName { get; set; }   // ✅ NEW
+        public string TechnologyNames { get; set; }     // ✅ NEW
+
     }
 }

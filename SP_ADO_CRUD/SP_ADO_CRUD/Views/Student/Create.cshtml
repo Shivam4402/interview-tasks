@@ -1,5 +1,5 @@
-﻿@model Student
-
+﻿@using SP_ADO_CRUD.ViewModels
+@model StudentViewModel
 @{
     ViewData["Title"] = "Create Student";
 }
@@ -11,80 +11,84 @@
         <div class="card-header bg-primary text-white">
             <h4 class="mb-0">Add Student</h4>
         </div>
-
+        <div asp-validation-summary="All" class="text-danger"></div>
         <div class="card-body">
 
             <form asp-action="Create" method="post" enctype="multipart/form-data">
 
                 <div class="row">
 
-                    <!-- Name -->
                     <div class="col-md-6 mb-3">
                         <label class="form-label">Name</label>
-                        <input asp-for="Name" class="form-control" placeholder="Enter name" />
+                        <input asp-for="Name" class="form-control" placeholder="Enter name" required/>
+
+                        <span asp-validation-for="Name" class="text-danger"></span>
+
                     </div>
 
-                    <!-- Email (optional if you have) -->
                     <div class="col-md-6 mb-3">
                         <label class="form-label">DOB</label>
-                        <input asp-for="DOB" type="date" class="form-control" />
-                    </div>
+                        <input asp-for="DOB" type="date" class="form-control" required />
 
-                    <!-- Gender -->
+                        <span asp-validation-for="DOB" class="text-danger"></span>
+
+                    </div>  
+
                     <div class="col-md-6 mb-3">
                         <label class="form-label d-block">Gender</label>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="Gender" value="Male" />
+                            <input class="form-check-input" type="radio" name="Gender" value="Male" required />
                             <label class="form-check-label">Male</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="Gender" value="Female" />
+                            <input class="form-check-input" type="radio" name="Gender" value="Female" required />
                             <label class="form-check-label">Female</label>
                         </div>
+
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+
                     </div>
 
-                    <!-- Qualification Dropdown -->
                     <div class="col-md-6 mb-3">
                         <label class="form-label">Qualification</label>
 
-                        <select asp-for="QualificationId" class="form-select">
+                        <select asp-for="QualificationId" class="form-select" required>
                             <option value="">-- Select Qualification --</option>
 
-                            @foreach (var q in ViewBag.Qualifications)
+                            @foreach (var q in Model.Qualifications)
                             {
                                 <option value="@q.QualificationId">@q.QualificationName</option>
                             }
                         </select>
+
+                        <span asp-validation-for="QualificationId" class="text-danger"></span>
+
                     </div>
 
-                    <!-- Technologies -->
                     <div class="col-md-12 mb-3">
                         <label class="form-label d-block">Technologies</label>
 
-                        @foreach (var tech in ViewBag.Technologies)
+                        @foreach (var tech in Model.Technologies)
                         {
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input"
                                        type="checkbox"
-                                       name="selectedTechnologies"
-                                       value="@tech.TechnologyId" />
+                                       name="SelectedTechnologies"
+                                       value="@tech.TechnologyId"
+                                @(Model.SelectedTechnologies.Contains(tech.TechnologyId) ? "checked" : "") />
 
-                                <label class="form-check-label">
-                                    @tech.TechnologyName
-                                </label>
+                                <label class="form-check-label">@tech.TechnologyName</label>
                             </div>
                         }
                     </div>
 
-                    <!-- Image Upload -->
                     <div class="col-md-6 mb-3">
                         <label class="form-label">Profile Image</label>
-                        <input type="file" name="file" class="form-control" />
+                        <input type="file" name="file" class="form-control" required />
                     </div>
 
-                    <!-- Preview -->
                     <div class="col-md-6 mb-3">
                         <label class="form-label">Preview</label><br />
                         <img id="previewImg"
